@@ -26,9 +26,9 @@ type adminApi = {method : "get" | "post", role: "admin" }
 type API = userApi | adminApi
 
 function checkRole(randomApi: API):string{
-    switch(randomApi.role){
+    switch(randomApi.role){ // type guard
         case "admin":
-            return 'role is admin'
+            return 'role is admin' // type narrowing
             break;
         case "user":
             return 'role is user'
@@ -36,3 +36,5 @@ function checkRole(randomApi: API):string{
         
     }
 }
+
+// Type narrowing is the result of Type Guard
