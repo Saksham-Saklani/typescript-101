@@ -8,7 +8,7 @@ class newCar implements car{
     brand = "BMW"
 }
 
-// Both type values are must to declare
+// Intersection - Both type values are must to declare
 
 type greetHindi = {hindi : string}
 type greetEng = {english : string }
