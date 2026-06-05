@@ -16,7 +16,7 @@ const newUser: auth = user // lets you add extra properties than defined in type
 
 
 
-// Splitting - clean code practice
+// Type Splitting - clean code practice
 
 
 type order = {

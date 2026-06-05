@@ -25,6 +25,7 @@ const newCar = new Car()
 newCar.reveal()
 newCar.change("Oct-2027", 220000000)
 
+// Inheritance
 
 class Marketing extends Car{
     getModel(){

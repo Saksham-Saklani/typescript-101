@@ -28,6 +28,7 @@ const userx: user = {
     name: 'x'
 }
 
+
 // readonly value
 
 type editUser = {
@@ -41,8 +42,44 @@ let userA: editUser = {
     age: 27,
     email: "userA@gmail.com"
 }
-
 // userA.email = "userA@outlook.com"  // cannot modify readonly after first declaration
+
+
+// index signature
+
+interface User{ 
+    username: string
+}
+
+interface User{
+    id: number
+}
+ 
+let john: User = {
+    username: "john",
+    id: 21
+}
+
+// extends 
+
+interface loginPage {
+    login: boolean
+}
+
+interface registerPage{
+    register: boolean
+}
+
+interface auth extends loginPage, registerPage{
+    login: false;
+    register: true
+}
+
+
+
+
+    
+
 
 
 
