@@ -19,6 +19,12 @@ TS -> lexer -> binder -> checker -> emitter -> .js, .map, etc
 **rootDir**: TS files
 **outDir**: JS files
 
+### ttpe installation
+
+1. `npm i library-name`
+
+2. `npm i -D @types/library-name`
+
 
 
 
